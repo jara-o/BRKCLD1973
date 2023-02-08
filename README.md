@@ -15,7 +15,7 @@ The source code to the sample app that is being deployed in the demo can be foun
 
 
 ## Repository Structure
-### Azure
+### 1_Azure
 ![Workflow_PublicCloud](images/Workflow_PublicCloud.png)
 In the directory labeled `1_Azure`, you can find the source code to create a Linux-based application as part of an Azure App Service plan. The documentation to the Azure Terraform provider that was used can be found [here](https://registry.terraform.io/providers/hashicorp/azurerm/3.42.0).
 
