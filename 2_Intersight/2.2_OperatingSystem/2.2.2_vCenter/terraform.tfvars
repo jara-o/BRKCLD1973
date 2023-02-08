@@ -1,0 +1,11 @@
+env                 = ""
+vsphere_user        = ""
+vsphere_password    = ""
+vsphere_server      = ""
+esxi_hostname       = ""
+esxi_username       = ""
+esxi_password       = ""
+vds_name            = ""
+vds_vmnic           = ""
+dpg_name            = ""
+dpg_vlanid          = 

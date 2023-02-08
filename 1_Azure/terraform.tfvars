@@ -1,0 +1,7 @@
+env             =""
+rg_location     =""
+os_type         =""
+sku_name        =""
+python_version  =""
+github_repo_url =""
+github_branch   =""

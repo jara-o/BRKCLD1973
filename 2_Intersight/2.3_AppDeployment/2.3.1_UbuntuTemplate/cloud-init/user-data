@@ -1,0 +1,43 @@
+#cloud-config
+autoinstall:
+    version: 1
+    early-commands:
+        - sudo systemctl stop ssh
+    locale: en_US
+    keyboard:
+        layout: en
+        variant: us
+    packages: [openssh-server, cloud-init, net-tools, perl, python3-venv]
+    network:
+        network:
+            version: 2
+            ethernets:
+                ens192:
+                    addresses:
+                        - ADD IP HERE
+                    routes:
+                        - to: 0.0.0.0/0
+                          via: ADD DEFAULT GW HERE
+                    nameservers:
+                        addresses: ["ADD DNS IP HERE"]
+    storage:
+        layout:
+            name: direct
+    identity:
+        hostname: ubuntu-2204-server
+        username: administrator
+        password: ADD HASHED PW HERE
+    ssh:
+        install-server: true
+        allow-pw: true
+        authorized-keys:
+          - ssh-rsa ADD KEY HERE
+    user-data:
+        disable_root: false
+    late-commands:
+        - echo 'administrator ALL=(ALL) NOPASSWD:ALL' > /target/etc/sudoers.d/administrator
+        - curtin in-target --target=/target -- chmod 440 /etc/sudoers.d/administrator
+        - sudo systemctl start ssh
+        - sudo rm -f /etc/netplan/00-installer-config.yaml
+        - "sudo sh -c 'echo \"network: {config: disabled}\" > /etc/netplan/99-disable-network-config.cfg'"
+        - sudo netplan apply
