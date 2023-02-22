@@ -1,7 +1,7 @@
 ![BRKCLD1973-Banner](images/BRKCLD1973-Banner.png)
 ## Source Code for the Cisco Live EMEA Session BRKCLD-1973 in Amsterdam on Feb 09, 2023.
 
-This repository is the source code for the demos shown in the BRKCLD-1973 session at Cisco Live EMEA in Amsterdam, Feb 06 - 10. As soon as the session recording is available, it will be linked here, too. 
+This repository is the source code for the demos shown in the BRKCLD-1973 session at Cisco Live EMEA in Amsterdam, Feb 06 - 10. The session recording and presentation slides can be viewed [here](https://www.ciscolive.com/on-demand/on-demand-library.html?search=brkcld-1973#/session/1675722350384001tsG3).
 
 The goal of the session is to demonstrate how to make on-premises infrastructure resources available programatically. Workflows that are demonstrated include a Linux app deployment in Azure, and how the same app can be deployed on UCS infrastructure using Intersight and vSphere. Both workflows are based on Terraform.
 
