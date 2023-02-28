@@ -62,3 +62,6 @@ In the directory labeled `2_Intersight`, you can find sub-directories based on t
 
 ## Contacts
 * Jara Osterfeld (josterfe@cisco.com)
+
+## License
+Provided under the [Cisco Sample Code License](LICENSE.md)
